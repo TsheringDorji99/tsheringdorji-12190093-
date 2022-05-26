@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>History</title>
+</head>
+
+<body>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title"><span>History</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-img">
+            <img src={{src}} alt="img">
+          </div>
+          <div class="project-info">
+            <p>Disease Name: {{name}}</p>
+            <p>Predicted: {{predicted}}</p>
+            <p>Image Link: {{imagelink}}</p>
+            <p>Confidence: {{confidence}}</p>
+            <p>Saved: {{saved}}</p><br>
+            {% if lateblight %}
+            <p><!-- <b>Late Blight </b><br> Blight is caused by the funguslike oomycete pathogen Phytophthora infestans. This potentially devastating disease can infect potato foliage and tubers at any stage of crop development. --> <br><b>Treatment:</b>
+            <br>late Blight is controlled by eliminating cull piles and volunteer potatoes, using proper harvesting and storage practices, and applying fungicideswhen necessary. Air drainage to facilitate the drying of foliage each day is important.</p>
+<!-- 
+            {% elif earlyblight %}
+            <p>
+              <b>Early Blight </b><br> Early Blight is caused by the fungus Alternaria solani. It is found wherever potatoes are grown.<br> Treatment 1. planting potato varieties that are resistant to the disease; late maturing are more resistant than early maturing varieties.<br> 2. Avoid overhead irrigation and allow for sufficient aeration between plants to allow the foliage to dry as quickly as possible.<br> 3. Keep the potato plants healthy and stress free by providing adequate nutrition and sufficient irrigation, especially later in the growing season after flowering when plants are most susceptible to the disease.</p><br><br><br>
+
+              {% elif healthy %}
+              <p>The leaf was a healythy Leaf</p><br><br><br>
+
+              {% else %}
+              <p>The image was predicted Unknoen</p><br><br><br> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
